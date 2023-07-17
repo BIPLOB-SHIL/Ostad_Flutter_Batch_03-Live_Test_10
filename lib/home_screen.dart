@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.all(8.0),
               child: SingleChildScrollView(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+               //   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -42,8 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           width: 150,
                           height: 150,
-                          child: Text("150 x 150"),
                           color: Colors.grey,
+                          alignment: Alignment.center,
+                          child: const Text("150 x 150"),
                         ),
                       ),
 
@@ -59,8 +60,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           width: 150,
                           height: 150,
-                          child: Text("150 x 150"),
                           color: Colors.grey,
+                          alignment: Alignment.center,
+                          child: const Text("150 x 150"),
                         ),
                       ),
 
@@ -76,8 +78,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           width: 150,
                           height: 150,
-                          child: Text("150 x 150"),
                           color: Colors.grey,
+                          alignment: Alignment.center,
+                          child: const Text("150 x 150"),
                         ),
                       ),
 
@@ -93,8 +96,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           width: 150,
                           height: 150,
-                          child: Text("150 x 150"),
                           color: Colors.grey,
+                          alignment: Alignment.center,
+                          child: const Text("150 x 150"),
                         ),
                       ),
 
@@ -110,8 +114,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           width: 150,
                           height: 150,
-                          child: Text("150 x 150"),
                           color: Colors.grey,
+                          alignment: Alignment.center,
+                          child: const Text("150 x 150"),
                         ),
                       ),
 
@@ -127,125 +132,153 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                           width: 150,
                           height: 150,
-                          child: Text("150 x 150"),
                           color: Colors.grey,
+                          alignment: Alignment.center,
+                          child: const Text("150 x 150"),
                         ),
                       ),
 
                     ),
+
                   ],
                 ),
               ),
             );
 
-
           }else{
             return Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
+                Expanded(
+                  flex: 10,
+                  child: SizedBox(
+                    height: double.infinity,
                     width: double.infinity,
-                    height: 150,
-                    color: Colors.black12,
-                    alignment: Alignment.center,
-                    // where to position the child
-                    child: Container(
-                      width: 150,
-                      height: 150,
-                      child: Text("150 x 150"),
-                      color: Colors.grey,
-                    ),
-                  ),
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            color: Colors.black12,
+                            alignment: Alignment.center,
+                            // where to position the child
+                            child: Container(
+                              width: 150,
+                              height: 150,
+                              color: Colors.grey,
+                              alignment: Alignment.center,
+                              child: const Text("150 x 150"),
+                            ),
+                          ),
 
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: double.infinity,
-                    height: 150,
-                    color: Colors.black12,
-                    alignment: Alignment.center,
-                    // where to position the child
-                    child: Container(
-                      width: 150,
-                      height: 150,
-                      child: Text("150 x 150"),
-                      color: Colors.grey,
-                    ),
-                  ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            color: Colors.black12,
+                            alignment: Alignment.center,
+                            // where to position the child
+                            child: Container(
+                              width: 150,
+                              height: 150,
+                              color: Colors.grey,
+                              alignment: Alignment.center,
+                              child: const Text("150 x 150"),
+                            ),
+                          ),
 
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: double.infinity,
-                    height: 150,
-                    color: Colors.black12,
-                    alignment: Alignment.center,
-                    // where to position the child
-                    child: Container(
-                      width: 150,
-                      height: 150,
-                      child: Text("150 x 150"),
-                      color: Colors.grey,
-                    ),
-                  ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            color: Colors.black12,
+                            alignment: Alignment.center,
+                            // where to position the child
+                            child: Container(
+                              width: 150,
+                              height: 150,
+                              color: Colors.grey,
+                              alignment: Alignment.center,
+                              child: const Text("150 x 150"),
+                            ),
+                          ),
 
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: double.infinity,
-                    height: 150,
-                    color: Colors.black12,
-                    alignment: Alignment.center,
-                    // where to position the child
-                    child: Container(
-                      width: 150,
-                      height: 150,
-                      child: Text("150 x 150"),
-                      color: Colors.grey,
-                    ),
-                  ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            color: Colors.black12,
+                            alignment: Alignment.center,
+                            // where to position the child
+                            child: Container(
+                              width: 150,
+                              height: 150,
+                              color: Colors.grey,
+                              alignment: Alignment.center,
+                              child: const Text("150 x 150"),
+                            ),
+                          ),
 
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: double.infinity,
-                    height: 150,
-                    color: Colors.black12,
-                    alignment: Alignment.center,
-                    // where to position the child
-                    child: Container(
-                      width: 150,
-                      height: 150,
-                      child: Text("150 x 150"),
-                      color: Colors.grey,
-                    ),
-                  ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            color: Colors.black12,
+                            alignment: Alignment.center,
+                            // where to position the child
+                            child: Container(
+                              width: 150,
+                              height: 150,
+                              color: Colors.grey,
+                              alignment: Alignment.center,
+                              child: const Text("150 x 150"),
+                            ),
+                          ),
 
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: double.infinity,
-                    height: 150,
-                    color: Colors.black12,
-                    alignment: Alignment.center,
-                    // where to position the child
-                    child: Container(
-                      width: 150,
-                      height: 150,
-                      child: Text("150 x 150"),
-                      color: Colors.grey,
-                    ),
-                  ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            color: Colors.black12,
+                            alignment: Alignment.center,
+                            // where to position the child
+                            child: Container(
+                              width: 150,
+                              height: 150,
+                              color: Colors.grey,
+                              alignment: Alignment.center,
+                              child: const Text("150 x 150"),
+                            ),
+                          ),
 
+                        ),
+
+
+                      ],
+                    ),
+
+                  ),
                 ),
+
+
               ],
+
+
             );
+
           }
         })
     );
